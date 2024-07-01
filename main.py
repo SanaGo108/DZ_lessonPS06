@@ -25,7 +25,7 @@ for vacancy in vacancies:
 
 driver.quit()
 
-with open("hh.csv", 'w',newline='', encoding='utf-8') as file:
+with open("hh.csv", 'w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
     writer.writerow(['Название товара',  'цена', 'ссылка на товар'])
     writer.writerows(parsed_data)
